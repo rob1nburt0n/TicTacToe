@@ -1,12 +1,12 @@
 
 // winningCombos
-//     [1, 2, 3],
-//     [1, 4, 7],
-//     [1, 5, 9],
-//     [2, 5, 8],
-//     [3, 6, 9],
-//     [3, 5, 7],
-//     [4, 5, 6],
+//     [1, 2, 3]
+//     [1, 4, 7]
+//     [1, 5, 9]
+//     [2, 5, 8]
+//     [3, 6, 9]
+//     [3, 5, 7]
+//     [4, 5, 6]
 //     [7, 8, 9]
   
 
@@ -65,33 +65,33 @@ var blue = "rgb(0, 0, 255)";
     if ($("#seven").css("background-color") === blue && $("#eight").css("background-color") === blue && $("#nine").css("background-color") === blue ){
  		alert("BLUE WINS!");
  	}
-    
+    // else {
+    // 	alert("CAT GOT IT!");
+    // }
  }
 
 
 $(document).ready(function() {
 
-	
-		$("td").on("click",function(){
-
-        if ($(this).css("background-color") != "rgba(0, 0, 0, 0)") {
+  $("td").on("click",function(){
+    if ($(this).css("background-color") != "rgba(0, 0, 0, 0)") {
 		alert("Please choose another space");
 	}
-		else if (counter % 2 === 0) {
-			$(this).css("background-color", "red");
-			counter++;
-		  if (counter > 4) {
-				winningCombo();
-			}
-		console.log(counter);
-	      } else {
-	      	$(this).css("background-color", "blue");
-	      	counter++;
+    else if (counter % 2 === 0) {
+	  $(this).css("background-color", "red");
+		counter++;
+		 if (counter > 4) {
+		   winningCombo();
+		}
+		// console.log(counter);
+	    } else {
+	      $(this).css("background-color", "blue");
+	      counter++;
 	      	if (counter > 4) {
-				winningCombo();
-	      }
-	  }
-	    });
+			  winningCombo();
+	        }
+	    }
+	});
 });
 
 

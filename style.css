@@ -1,6 +1,27 @@
+header {
+	text-align: center;
+	font-size: 5em;
+	font-weight: bold;
+}
+
+body {
+	background-color: gainsboro;
+}
+
 td {
 	border: 2px solid black;
 	width: 150px;
 	height: 150px;
+}
+table {
+	background-color: white;
+	margin-top: 80px;
+	margin-left: 475px;
+}
+
+p	{
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
 }
 
